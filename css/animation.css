@@ -1,0 +1,218 @@
+
+/* Hiệu ứng nút mua ngay */
+.codepro-btn:active,
+.codepro-btn:hover,
+.codepro-btn:focus {
+  outline: 0 !important;
+  outline-offset: 0;
+}
+.codepro-btn::before,
+.codepro-btn::after {
+  position: absolute;
+  content: "";
+}
+.codepro-btn {
+  position: relative;
+  display: inline-block;
+  height: 35px;
+  background-color: transparent;
+  border: none;
+  cursor: pointer;
+  width: 120px;
+  border-radius: 20px;
+  background-color:#41bdb9;
+  font-weight: 700;
+  border: none;
+  color:white;
+}
+.codepro-btn span {
+  position: relative;
+  display: inline-block;
+  font-size: 18px;
+  font-weight: bold;
+  letter-spacing: 2px;
+  width: 100%;
+  transition: 0.3s;
+  font-family: "Quicksand", Helvetica;
+}
+.codepro-btn-2 {
+  background-color: rgb(236, 101, 52);
+  color: white;
+}
+.codepro-btn-2::before {
+  background-color:#55c0bd;
+  transition: 0.3s ease-out;
+  border-radius: 20px;
+}
+.codepro-btn-2 span:hover {
+    color: rgb(28, 31, 30);
+}
+.codepro-btn.hover-slide-right::before {
+  top: 0;
+  bottom: 0;
+  left: 0;
+  height: 100%;
+  width: 0%;
+}
+.codepro-btn.hover-slide-right:hover::before {
+  width: 100%;
+}
+
+/* iconzalo lắc  */
+.wrapper-call-btn{
+    position: fixed;
+    bottom: 70px;
+    right: 80px;
+  }
+  .wrapper-call-btn-2{
+    position: fixed;
+    bottom: 160px;
+    right: 80px;
+  }
+.call-btn-2,.call-btn{
+    position: relative;
+  }
+  .call-btn-2 img,.call-btn img{
+    position: absolute;
+    background-color: rgb(156, 186, 247);
+    padding: 10px;
+    width: 60px;
+    height: 60px;
+    border-radius: 50%;
+    animation-name: shake-iconzalo;
+    animation-duration: 1.5s;
+    animation-iteration-count: infinite;
+  }
+  .call-btn-circle-1, .call-btn-circle-2,.call-btn-circle-3,.call-btn-circle-4{
+    position: absolute;
+    background-color: rgb(164, 193, 247);
+    opacity: 0.5;
+    width: 60px;
+    height: 60px;
+    border-radius: 50%;
+    transform: scale(1.5);
+  }
+  .call-btn-circle-1,.call-btn-circle-3{
+    animation-name: zoom-iconzalo;
+    animation-duration: 1.5s;
+    animation-iteration-count: infinite;
+  }
+  .call-btn-circle-2,.call-btn-circle-4{
+    transform: scale(2);
+    opacity: 0;
+    animation-name:zoom-iconzalo2;
+    animation-iteration-count: infinite;
+    animation-iteration-count: infinite;
+    animation-duration: 1s;
+  }
+  @keyframes shake-iconzalo {
+    0%{ transform: rotate(25deg);}
+    15%{ transform: rotate(-25deg);}
+    30%{ transform: rotate(25deg);}
+    45%{transform: rotate(-25deg);}
+    50%{transform: rotate(0deg);}
+    100%{transform: rotate(0deg);}
+  }
+  @keyframes zoom-iconzalo {
+    0%{transform: scale(1.25);}
+    50%{transform: scale(1.5);}
+    75%{transform: scale(1.5);}
+    100%{transform: scale(1.25);}
+  }
+  @keyframes zoom-iconzalo2 {
+    0%{opacity: 0.5; transform: scale(1.5); }
+    100%{ opacity: 0; transform: scale(2);}
+  }
+  /* Bag- shake */
+  .img-bag-icon{
+    animation-name: bag-shake;
+    animation-duration: 3s;
+    animation-iteration-count: infinite;
+  }
+
+  @keyframes bag-shake {
+    0%,75%,100%{
+      transform: rotate(0deg);
+    }
+    25% {
+      transform: rotate(-25deg);
+    }
+    50% {
+      transform: rotate(25deg);
+    }
+  }
+  @keyframes bag-shake-stop {
+    0%,100%{
+      transform: rotate(0deg);
+    }
+  }
+  .img-bag-icon:hover{
+    animation: bag-shake-stop;
+  }
+
+  /* .call-btn-circle-1{
+    position: absolute;
+    border: solid 1px rgb(23, 99, 242);
+    border-radius: 50%;
+    width: 70px;
+    height: 70px;
+    transform: scale(1.0);
+    animation-name: iconzalo;
+    animation-duration: 1s;
+    animation-iteration-count: infinite;
+  } */
+  /* @keyframes iconzalo {
+    0%{
+        transform: scale(1.0);
+        opacity: 1;
+    }
+    100%{
+        transform: scale(1.5);
+        opacity: 0;
+    }
+  } */
+  /* .call-btn:hover .call-btn-border{
+    transform: scale(2.0);
+  } */
+  .slideshow-banner {
+    max-width: 1200px;
+    margin: 0 auto;
+}
+.slide{
+    display: none;
+    animation: fade 1s linear;
+    animation-name: fade;
+}
+@keyframes fade {
+    0% {
+        opacity: 0;
+    }
+    100% {
+        opacity: 1;
+    }
+}
+.slideshow-banner{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.slide img {
+    width: 1110px;
+    height: 420px;
+}
+.prev, .next {
+  position: absolute;
+  top: 65%;
+  transform: translateY(-50%);
+  padding: 10px;
+  background-color: rgba(160, 157, 157, 0.5);
+  color: white;
+  font-size: 20px;
+  cursor: pointer;
+}
+.prev {
+ margin-right: 1080px;
+}
+.next {
+  margin-left: 1080px;
+}

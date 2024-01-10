@@ -1,0 +1,114 @@
+<div class="modal fade" id="signupModal">
+    <div class="modal-dialog">
+        <div class="modal-content">
+            <button type="button" class="close" data-dismiss="modal" onclick="closeModal()"><img src="img/icon/close2.jpg" width="30px"></button>
+            <div class="modal-header1">
+                <h4 class="modal-title">Đăng Ký</h4>
+                <button class="signup-social">
+                    <img src="img/icon/google.png" alt="" width="40px">
+                    <p>Sign up with google </p>
+                </button>
+                <div class="txt-or"><span>Or</span></div>
+            </div>
+            <form action="header.php" method="post" enctype="multipart/form-data" id="myForm" onsubmit="return signup()">
+                <div class="form-group">
+                    <label for="email">Email</label>
+                    <input class="my-input" type="email" name="email" id="email" required pattern="[a-zA-Z0-9._%+-]+@[a-zA-Z0-9.-]+\.[a-zA-Z]{2,4}" placeholder="Nhập email của bạn">
+                    <span style="color:red" id="emailError"></span>
+                </div>
+                <div class="form-group">
+                    <label for="password">Mật khẩu</label>
+                    <div class="input-group">
+                        <input type="password" class="my-input" name="password" id="password" required placeholder="Nhập mật khẩu của bạn">
+                        <div class="input-group-append">
+                            <button id="btn-show" type="button" onclick="togglePasswordVisibility('password', 'btn-show')">
+                                <i class="fas fa-eye" id="eye-icon"></i>
+                            </button>
+                        </div>
+                    </div>
+                    <span style="color:red" id="passwordError"></span>
+                </div>
+                <div class="form-group">
+                    <label for="repassword">Nhập lại mật khẩu</label>
+                    <div class="input-group">
+                        <input type="password" class="my-input" name="repassword" id="repassword" required placeholder="Nhập mật khẩu của bạn">
+                        <div class="input-group-append">
+                            <button id="btn-show2" type="button" onclick="togglePasswordVisibility('repassword', 'btn-show2')">
+                                <i class="fas fa-eye" id="eye-icon2"></i>
+                            </button>
+                        </div>
+                    </div>
+                    <span style="color:red" id="repasswordError"></span>
+                </div>
+                <div class="wrapper-btn-login">
+                    <input type="submit" id="btn-login" value="Đăng nhập">
+                    <input type="reset" id="btn-reset" onclick="resetForm()" value="Huỷ">
+                </div>
+            </form>
+        </div>
+    </div>
+</div>
+
+<script>
+    function closeModal() {
+        // Thêm mã để đóng modal
+    }
+
+    function togglePasswordVisibility(inputId, buttonId) {
+        var passwordInput = document.getElementById(inputId);
+        var buttonIcon = document.getElementById(buttonId).querySelector('i');
+
+        if (passwordInput.type === 'password') {
+            passwordInput.type = 'text';
+            buttonIcon.className = 'fas fa-eye-slash';
+        } else {
+            passwordInput.type = 'password';
+            buttonIcon.className = 'fas fa-eye';
+        }
+    }
+
+    function signup() {
+        var email = document.getElementById('email').value;
+        var password = document.getElementById('password').value;
+        var repassword = document.getElementById('repassword').value;
+
+        // Kiểm tra lỗi và xử lý logic đăng ký ở đây
+        var emailError = document.getElementById('emailError');
+        var passwordError = document.getElementById('passwordError');
+        var repasswordError = document.getElementById('repasswordError');
+
+        emailError.textContent = '';
+        passwordError.textContent = '';
+        repasswordError.textContent = '';
+
+        if (!email) {
+            emailError.textContent = 'Vui lòng nhập email.';
+            return false;
+        }
+
+        // Kiểm tra định dạng email
+        var emailPattern = /^[a-zA-Z0-9._%+-]+@[a-zA-Z0-9.-]+\.[a-zA-Z]{2,4}$/;
+        if (!emailPattern.test(email)) {
+            emailError.textContent = 'Địa chỉ email không hợp lệ.';
+            return false;
+        }
+
+        if (!password) {
+            passwordError.textContent = 'Vui lòng nhập mật khẩu.';
+            return false;
+        }
+
+        if (password !== repassword) {
+            repasswordError.textContent = 'Mật khẩu không khớp.';
+            return false;
+        }
+
+        // Xử lý đăng ký tại đây
+
+        return true; // Nếu muốn form tiếp tục submit, return true; nếu không, return false.
+    }
+
+    function resetForm() {
+        // Thêm mã để làm mới form
+    }
+</script>

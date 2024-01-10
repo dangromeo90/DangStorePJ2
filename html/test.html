@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Khối div với tam giác</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <div class="comment-box">
+    <div class="comment-triangle"></div>
+    <div class="comment-content">
+      <!-- Nội dung bình luận ở đây -->
+    </div>
+  </div>
+</body>
+</html>
+<style>.comment-box {
+    position: relative;
+    background-color: #f0f0f0;
+    padding: 10px;
+    margin-left: 20px; /* Điều chỉnh khoảng cách với bên trái */
+    margin-top: 50px;
+  }
+  
+  .comment-triangle {
+    position: absolute;
+    top: -13px; /* Điều chỉnh khoảng cách với phía trên */
+    left: 2;
+    margin-left: -10px; /* Điều chỉnh vị trí ngang của tam giác */
+    width: 0;
+    height: 0;
+    border-left: 10px solid transparent;
+    border-right: 10px solid transparent;
+    border-bottom: 15px solid #eed9d9; /* (chiều cao tam giác) */
+  }</style>

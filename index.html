@@ -1,0 +1,399 @@
+<!DOCTYPE html>
+<html lang="en-vi">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Document</title>
+        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap/4.6.2/dist/css/bootstrap.min.css">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css"/>
+        <link rel='stylesheet prefetch' href='https://netdna.bootstrapcdn.com/font-awesome/3.2.1/css/font-awesome.css'>
+        <link href="https://fonts.googleapis.com/css?family=Alatsi&display=swap" rel="stylesheet"/>
+        <link href="https://fonts.googleapis.com/css?family=Quicksand&display=swap" rel="stylesheet" />
+        <link href="https://fonts.googleapis.com/css?family=Open+Sans&display=swap" rel="stylesheet"/>
+        <style>.container-fluid a{text-decoration: none;} .container ul{list-style:none;}</style>
+        <link rel="stylesheet" href="css/style.css">
+        <link rel="stylesheet" href="css/animation.css">
+        <link rel="stylesheet" href="css/modal.css">
+        <link rel="stylesheet" href="css/profile.css">
+        <link rel="stylesheet" href="css/productdetail.css">
+        <link rel="stylesheet" href="css/dropdown.css">
+        <link rel="stylesheet" href="css/reponsive.css">
+        <link rel="stylesheet" href="css/cart.css">
+        <script src="https://cdn.jsdelivr.net/npm/jquery/3.6.4/dist/jquery.slim.min.js"></script>
+        <script src="https://cdn.jsdelivr.net/npm/popper.js/1.16.1/dist/umd/popper.min.js"></script>
+        <script src="https://cdn.jsdelivr.net/npm/sweetalert2/11.10.2/dist/sweetalert2.all.min.js"></script>
+        <link href="https://cdn.jsdelivr.net/npm/sweetalert2/11.10.2/dist/sweetalert2.min.css" rel="stylesheet">
+    </head>
+    
+<body >
+    <div class="container-fluid">
+        <div class="header-label">
+           <marquee> Thế giới mỹ phẩm và thực phẩm chức năng</marquee>
+        </div>
+        <!-- hearder start -->
+        <header class="header">
+            <div class="logo">
+                <a href="index.html"><img src="img/logo/danglogo.jpg" alt="" width="200px" height="130px"></a>
+            </div>
+            <div class="wrapper-barsearch">
+                <div class="barsearch">
+                    <input type="text">
+                    <button type="button" id="btn-search"><i class="fas fa-search"></i></button>         
+                </div>
+                <div class="header-info">
+                    <ul>
+                        <li>Miễn phí giao hàng cho hoá đơn từ 500.000đ  </li>
+                        <li>Hoả tốc 2 giờ trong nội thành Tp.HCM </li>
+                        <li>Tư vấn - đặt hàng : 
+                            <a href="https://id.zalo.me/account?continue=https://chat.zalo.me">0915111916</a> - 
+                            <a href="https://id.zalo.me/account?continue=https://chat.zalo.me">0837863333</a>
+                        </li>
+                    </ul>
+               </div>
+            </div>
+            <div class="wrapper-header-controller">
+                <div class="wrapper-header-cart-top">
+                    <div class="header-cart">
+                        <div class="cart">
+                            <a href="?pages=cart"><img class="img-bag-icon" src="./img/icon/bag-64-1.png" width="30px"></a>
+                        </div>
+                        <div class="wrapper-cart-amount">
+                            <div class="cart-amount">
+                                <p class="item-amount">5</p>
+                            </div>
+                                <a href="html/giohang.html" class="txt-cart">Giỏ hàng</a>
+                       </div>
+                   </div>
+                    <div class="account">
+                        <div class="dropbtn">
+                           <div class="wrapper-avatar">
+                              <img src="img/avatar/customer.jpg">
+                           </div>
+                           <div class="wrapper-customer">
+                           <p class="txt-hello" style="font-size:14px;color:rose">Xin Chào !!!<p>
+                               <p class="customer-name">Nguyễn Đăng</p>
+                           </div>
+                         </div>
+                            <div class="dropdown-content dropdown-login">
+                                <a href="">Đăng Nhập</a>
+                                <a href="">Đăng Ký</a>
+                          </div>
+                    </div>
+               </div>
+                    <div class="social-icon">
+                        <a href="https://www.tiktok.com/"target="_blank"><img src="./img/icon/tiktok.png"/></a>
+                        <a href="https://www.facebook.com/"target="_blank"><img src="./img/icon/fb.png"/></a>
+                        <a href="https://id.zalo.me/" target="_blank"><img src="./img/icon/zalo.png"/></a>
+                        <a href="https://shopee.vn/" target="_blank"><img src="./img/icon/shoppe.png"/></a>
+                        <a href="https://www.lazada.vn/"target="_blank"><img src="./img/icon/lazada-1.png"/></a>
+                    </div>
+          </div>
+     </header>
+      <!-- hearder end -->
+       <!-- main start -->
+        <div class="menu">
+            <ul class="menu-bar">
+                <li class="menu-bar-home">
+                    <i class="fas fa-home"></i>
+                    <a href="index.php" class="home">Trang chủ</a>
+                </li>
+                <li class="dropdown">
+                    <div  class="menu-bar-cate">
+                        <i class="fas fa-bars"></i>
+                        <a href="">Danh mục</a>  
+                    </div>
+                    <ul class="dropdown-content1">
+                        <li><a href="#">Thực phẩm chức năng</a></li>
+                        <li><a href="#">Kem dưỡng ẩm</a></li>
+                        <li><a href="#">Serum</a></li>
+                    </ul>
+                </li>
+                <li><a href="#">Kinh nghiệm</a></li>
+                <li><a href="#">Khuyến mãi</a></li>
+                <li><a href="#">Liên hệ</a></li>
+            </ul>
+        </div>
+        <div class="slideshow-banner ">
+            <div class="slide">
+               <a href=""><img src="./img/banner/banner.jpg" alt="Slide 1"></a> 
+            </div>
+            <div class="slide ">
+                <a href=""><img src="./img/banner/banner5.jpg" alt="Slide 2"></a>
+            </div>
+            <div class="slide">
+               <a href=""> <img src="./img/banner/banner4.jpg" alt="Slide 3"></a>
+            </div>
+            <div class="slide">
+               <a href=""> <img src="./img/banner/bal3.jpg" alt="Slide 4"></a>
+            </div>
+            <div class="slide">
+               <a href=""> <img src="./img/banner/bal4.jpg" alt="Slide 5"></a>
+            </div>
+            <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+            <a class="next" onclick="plusSlides(1)">&#10095;</a>
+        </div>
+     <main>
+        <div class="categoryname">
+            <div class="trai"><img src="./img/trai.jpg" alt=""></div>
+             <a href="">MỸ PHẨM NỔI BẬT</a>
+             <div class="phai"><img src="./img/phai.jpg" alt=""></div>
+        </div>
+        <section class="wrapper-item">
+            <div class="row-item">
+                    <div class="box-item">
+                        <div class="box-item-img">
+                            <a href=""><img src="./img/products/niacinamide.jpg" alt="abc"></a>
+                        </div>
+                        <div class="box-item-info">
+                            <a href="" class="item-name">Balance Active Formula Niacinamide 30ml</a>
+                            <a href=""class="item-price">Giá cũ: 160.000đ</a>
+                        </div>
+                        <div class="boder-price hover-border-3 ">
+                            <p class="item-price-sale">139.000</p>
+                            <button class="codepro-btn codepro-btn-2 hover-slide-right"><span>Mua ngay</span></button>
+                        </div>
+                        <a href="html/chitietsanpham.html" class="xemchitiet">Xem chi tiết</a>
+                          <!-- <div class="stars">
+                            <form action="">
+                                <input class="star star-5" id="star-5" type="radio" name="star"/>
+                                <label class="star star-5" for="star-5"></label>
+                                <input class="star star-4" id="star-4" type="radio" name="star"/>
+                                <label class="star star-4" for="star-4"></label>
+                                <input class="star star-3" id="star-3" type="radio" name="star"/>
+                                <label class="star star-3" for="star-3"></label>
+                                <input class="star star-2" id="star-2" type="radio" name="star"/>
+                                <label class="star star-2" for="star-2"></label>
+                                <input class="star star-1" id="star-1" type="radio" name="star"/>
+                                <label class="star star-1" for="star-1"></label>
+                        </form>
+                        </div> -->
+                    </div>
+                    <div class="box-item">
+                        <div class="box-item-img">
+                            <a href=""><img src="./img/products/niacinamide.jpg" alt="abc"></a>
+                        </div>
+                        <div class="box-item-info">
+                            <a href="" class="item-name">Balance Active Formula Niacinamide 30ml</a>
+                            <a href=""class="item-price">Giá cũ: 160.000đ</a>
+                        </div>
+                        <div class="boder-price hover-border-3 ">
+                            <p class="item-price-sale">139.000</p>
+                            <button class="codepro-btn codepro-btn-2 hover-slide-right"><span>Mua ngay</span></button>
+                        </div>
+                        <a href="" class="xemchitiet">Xem chi tiết</a>
+                    </div>
+                    <div class="box-item">
+                        <div class="box-item-img">
+                            <a href=""><img src="./img/products/niacinamide.jpg" alt="abc"></a>
+                        </div>
+                        <div class="box-item-info">
+                            <a href="" class="item-name">Balance Active Formula Niacinamide 30ml</a>
+                            <a href=""class="item-price">Giá cũ: 160.000đ</a>
+                        </div>
+                        <div class="boder-price hover-border-3 ">
+                            <p class="item-price-sale">139.000</p>
+                            <button class="codepro-btn codepro-btn-2 hover-slide-right"><span>Mua ngay</span></button>
+                        </div>
+                        <a href="" class="xemchitiet">Xem chi tiết</a>
+                    </div>
+                    <div class="box-item">
+                        <div class="box-item-img">
+                            <a href=""><img src="./img/products/niacinamide.jpg" alt="abc"></a>
+                        </div>
+                        <div class="box-item-info">
+                            <a href="" class="item-name">Balance Active Formula Niacinamide 30ml</a>
+                            <a href=""class="item-price">Giá cũ: 160.000đ</a>
+                        </div>
+                        <div class="boder-price hover-border-3 ">
+                            <p class="item-price-sale">139.000</p>
+                            <button class="codepro-btn codepro-btn-2 hover-slide-right"><span>Mua ngay</span></button>
+                        </div>
+                        <a href="" class="xemchitiet">Xem chi tiết</a>
+                    </div>
+                    <div class="box-item">
+                        <div class="box-item-img">
+                            <a href=""><img src="./img/products/niacinamide.jpg" alt="abc"></a>
+                        </div>
+                        <div class="box-item-info">
+                            <a href="" class="item-name">Balance Active Formula Niacinamide 30ml</a>
+                            <a href=""class="item-price">Giá cũ: 160.000đ</a>
+                        </div>
+                        <div class="boder-price hover-border-3 ">
+                            <p class="item-price-sale">139.000</p>
+                            <button class="codepro-btn codepro-btn-2 hover-slide-right"><span>Mua ngay</span></button>
+                        </div>
+                        <a href="" class="xemchitiet">Xem chi tiết</a>
+                    </div>
+                    <div class="box-item">
+                        <div class="box-item-img">
+                            <a href=""><img src="./img/products/niacinamide.jpg" alt="abc"></a>
+                        </div>
+                        <div class="box-item-info">
+                            <a href="" class="item-name">Balance Active Formula Niacinamide 30ml</a>
+                            <a href=""class="item-price">Giá cũ: 160.000đ</a>
+                        </div>
+                        <div class="boder-price hover-border-3 ">
+                            <p class="item-price-sale">139.000</p>
+                            <button class="codepro-btn codepro-btn-2 hover-slide-right"><span>Mua ngay</span></button>
+                        </div>
+                        <a href="" class="xemchitiet">Xem chi tiết</a>
+                    </div>
+                    <div class="box-item">
+                        <div class="box-item-img">
+                            <a href=""><img src="./img/products/niacinamide.jpg" alt="abc"></a>
+                        </div>
+                        <div class="box-item-info">
+                            <a href="" class="item-name">Balance Active Formula Niacinamide 30ml</a>
+                            <a href=""class="item-price">Giá cũ: 160.000đ</a>
+                        </div>
+                        <div class="boder-price hover-border-3 ">
+                            <p class="item-price-sale">139.000</p>
+                            <button class="codepro-btn codepro-btn-2 hover-slide-right"><span>Mua ngay</span></button>
+                        </div>
+                        <a href="" class="xemchitiet">Xem chi tiết</a>
+                    </div>
+                    <div class="box-item">
+                        <div class="box-item-img">
+                            <a href=""><img src="./img/products/niacinamide.jpg" alt="abc"></a>
+                        </div>
+                        <div class="box-item-info">
+                            <a href="" class="item-name">Balance Active Formula Niacinamide 30ml</a>
+                            <a href=""class="item-price">Giá cũ: 160.000đ</a>
+                        </div>
+                        <div class="boder-price hover-border-3 ">
+                            <p class="item-price-sale">139.000</p>
+                            <button class="codepro-btn codepro-btn-2 hover-slide-right"><span>Mua ngay</span></button>
+                        </div>
+                        <a href="" class="xemchitiet">Xem chi tiết</a>
+                    </div>
+              
+           </div>  
+     </section>
+     </main>
+       <!-- main end -->
+       <footer> 
+            <div class="footer-top">
+                <div class="footer_1">
+                    <h5>Về chúng tôi</h5>
+                    <a href="">Giới thiệu</a>
+                    <a href="">Chính sách đổi hàng</a>
+                    <a href="">Chính sách giao hàng</a>
+                    <a href="">Liên hệ</a>
+                </div>
+                 <div class="footer_2">
+                    <h5>Đăng ký nhận tin</h5>
+                    <p class="footer_2_txt">(Nhận thông tin về sản phẩm và <br> khuyễn mãi hàng tuần)</p>
+                    <input class="write_email" type="text" placeholder="Email"><br>
+                    <button class="btn_dangky"><a href="">Đăng Ký</a></button>
+                </div>
+                <div class="footer_3">
+                    <h5>Hỗ trợ thanh toán</h5>
+                    <div class="footer_3_icon">
+                      <a href=""><img  src="img/icon/shoppepay.png"> </a>
+                      <a href=""><img  src="img/icon/momo.png"/>  </a> 
+                      <a href=""><img  src="img/icon/vnpay.png"/> </a> 
+                      <a href=""><img  src="img/icon/visa.png" />  </a> 
+                    </div>
+                    <div class="icon-bothongtin">
+                        <img src="./img/icon/dadangky-01.png" alt="">
+                        <img src="./img/icon/dathongbao-01.png" alt="">
+                    </div>
+                </div>
+                <iframe src="https://www.google.com/maps/embed?pb=!1m17!1m12!1m3!1d3919.4686199310772!2d106.66131507486894!3d10.775375259213488!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m2!1m1!2zMTDCsDQ2JzMxLjMiTiAxMDbCsDM5JzUwLjAiRQ!5e0!3m2!1svi!2s!4v1698748608476!5m2!1svi!2s" width="300"style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>            </div>
+
+              
+            <div class="footer_bottom">©DTH store All rights reserved</div>
+       </footer>
+        <div class="wrapper-call-btn">
+            <div class="call-btn-2">
+                <div class="call-btn-circle-1"></div>
+                <div class="call-btn-circle-2"></div>
+                <a href="https://id.zalo.me/account?continue=https://chat.zalo.me"><img src="./img/icon/zalo.png" alt="" width="50px"></a>\
+            </div>
+        </div>
+        <div class="wrapper-call-btn-2">
+            <div class="call-btn">
+                <div class="call-btn-circle-3"></div>
+                <div class="call-btn-circle-4"></div>
+                <a href="https://www.messenger.com/"><img src="./img/icon/facebook.png" alt="" width="50px"></a>\
+            </div>
+        </div>
+   </div>
+
+<!-- Đăng nhập -->
+<div class="modal fade" id="modal-login">
+    <div class="modal-dialog">
+        <div class="modal-content loginform">
+            <button type="button" class="close" data-dismiss="modal" ><img src="img/icon/close2.jpg" width="30px"></button>
+            <div class="modal-header1">
+                <h4 class="modal-title">Đăng Nhập</h4>
+              <button class="signup-social">
+                <img src="img/icon/google.png" alt="" width="40px">
+                <p>Login with google </p>
+              </button>
+              <div class="txt-or"><span>Or</span></div>
+              <form action="" method="post" enctype="multipart/form-data" class="form-sinup">
+                <div class="form-group">
+                    <label for="email">Email</label>
+                    <input type="email" value="@gmail.com" class="form-control" placeholder="Nhập email đăng nhập" id="email" name="email" onblur="addtxtEmail()" required>
+                  </div>
+                <div class="form-group">
+                    <label for="pwd">Mật khẩu</label>
+                    <div class="input-group">
+                        <input type="password" class="form-control" placeholder="Nhập mật khẩu" id="password" name="password" required>
+                        <i class="fas fa-eye eye-icon"  onclick="showpassword()"></i>
+                    </div>
+                </div>
+                <div class="wrapper-btn-login">
+                    <input type="submit" name="login" id="btn-login" value="Đăng nhập">
+                    <input type="reset" id="btn-reset" value="Huỷ">
+               </div>
+              </form>
+            </div>
+        </div>
+    </div>
+</div>
+<!-- Modal Đăng Ký -->
+<div class="modal fade" id="modal-signup">
+    <div class="modal-dialog">
+        <div class="modal-content registerform">
+            <button type="button" class="close" data-dismiss="modal" ><img src="img/icon/close2.jpg" width="30px"></button>
+            <div class="modal-header1">
+                <h4 class="modal-title">Đăng Ký</h4>
+              <button class="signup-social">
+                <img src="img/icon/google.png" alt="" width="40px">
+                <p>Sign up with google </p>
+              </button>
+              <div class="txt-or"><span>Or use your email for registration</span></div>
+              <form action="" method="post" enctype="multipart/form-data" class="form-sinup">
+                <div class="form-group">
+                  <label>Họ tên</label>
+                  <input type="text" class="form-control" placeholder="Nhập tên đăng nhập" id="username" name="username" required>
+                </div>
+                <div class="form-group">
+                    <label for="email">Email</label>
+                    <input type="email" class="form-control" placeholder="Nhập email " id="email" name="email" required>
+                  </div>
+                <div class="form-group">
+                  <label >Mật khẩu</label>
+                  <input type="password" class="form-control" placeholder="Nhập mật khẩu" id="password" name="password"required>
+                </div>
+                <div class="form-group">
+                    <label >Nhập lại mật khẩu</label>
+                    <input type="repassword" class="form-control" placeholder="Nhập lại mật khẩu" id="repassword" name="repassword"required>
+                </div>
+            
+                <div class="wrapper-btn-login">
+                    <input type="submit" name="login" id="btn-login" value="Đăng ký">
+                    <input type="reset" id="btn-reset" value="Huỷ">
+               </div>
+              </form>
+            </div>
+        </div>
+    </div>
+</div>
+<script src="js/slide.js"></script>
+<script src="js/checkform.js"></script>
+
+</body>
+</html>

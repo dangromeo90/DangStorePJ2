@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Slide Ảnh</title>
+    <style>
+       .slideshow-container {
+    position: relative;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+.slide {
+    display: none;
+    animation: fade 1s linear;
+    animation-name: fade;
+}
+@keyframes fade {
+    0% {
+        opacity: 0;
+    }
+    100% {
+        opacity: 1;
+    }
+}
+img {
+    width: 1200px;
+    height: 450px;
+}
+/* 
+.prev, .next {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    padding: 16px;
+    background-color: rgba(0, 0, 0, 0.5);
+    color: white;
+    font-size: 20px;
+    cursor: pointer;
+}
+.prev {
+    left: 0;
+}
+.next {
+    right: 0;
+} */
+
+
+    </style>
+</head>
+<body>
+    <div class="slideshow-container">
+        <div class="slide fade">
+           <a href=""><img src="./img/banner/banner.jpg" alt="Slide 1"></a> 
+        </div>
+        <div class="slide fade">
+            <a href=""><img src="./img/banner/banner5.jpg" alt="Slide 2"></a>
+        </div>
+        <div class="slide fade">
+           <a href=""> <img src="./img/banner/banner4.jpg" alt="Slide 3"></a>
+        </div>
+        <!-- <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+        <a class="next" onclick="plusSlides(1)">&#10095;</a> -->
+    </div>
+    <script>
+       let slideIndex = 1;
+showSlides(slideIndex);
+
+function plusSlides(n) {
+    showSlides(slideIndex += n);
+}
+
+function currentSlide(n) {
+    showSlides(slideIndex = n);
+}
+
+function showSlides(n) {
+    let slides = document.getElementsByClassName("slide");
+    if (n > slides.length) {
+        slideIndex = 1;
+    }
+    if (n < 1) {
+        slideIndex = slides.length;
+    }
+    for (let i = 0; i < slides.length; i++) {
+        slides[i].style.display = "none";
+    }
+    slides[slideIndex - 1].style.display = "block";
+}
+
+// Thêm đoạn mã tự động chuyển slide sau một khoảng thời gian
+let slideInterval = setInterval(function () {
+    plusSlides(1);
+}, 3000); // Tự động chuyển slide mỗi 3 giây (3000 milliseconds)
+
+    </script>
+</body>
+</html>

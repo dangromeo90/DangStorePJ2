@@ -1,0 +1,186 @@
+  /* Form account*/
+  
+  .loginform {
+    background-color: #fefefe;
+    max-width: 400px;
+    padding: 20px;
+    box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2),0 6px 20px 0 rgba(0,0,0,0.19);
+    animation-name: animatetop;
+    animation-duration: 0.4s;
+    margin-left: 410px ;
+    border-radius: 20px;
+  }
+  .registerform{
+    background-color: #fefefe;
+    max-width: 400px;
+    padding: 20px;
+    box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2),0 6px 20px 0 rgba(0,0,0,0.19);
+    animation-name: animatetop;
+    animation-duration: 0.4s;
+    margin-top: -25px;
+    border-radius: 20px;
+    margin-left: 410px ;
+  }
+  @keyframes animatetop {
+    from {
+      opacity: 0;
+      transform: translatex(300px);
+    }
+    to {
+      opacity: 1;
+      transform: translatex(0);
+    }
+  }
+
+  .form-signup{
+    width: 100%;
+  }
+  .input-group{
+    position: relative;
+  }
+  .close{
+    display: flex;
+    justify-content: right;
+    margin-top: -10px;
+  }
+  .close img {
+    transition: ease-in 80ms;
+  }
+  .close img:active{
+    transform: scale(0.9);
+  }
+  .modal-title{
+    margin-top: -10px;
+  }
+  .wrapper-header-title{
+    display: flex;
+  }
+   .wrapper-header-title button{
+    margin-left: 150px;
+   }
+  .modal-header1{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    /* border-bottom: 1px solid; */
+  }
+  .modal-header1 h4 {
+    color: rgb(43, 42, 42);
+    margin-top: -20px;
+  }
+  .signup-social
+  {
+    display: flex;
+    justify-content:space-around;
+    align-items: center;
+    border-radius: 10px;
+    border: 0;
+    background-color: #2e56f3;
+    width: 100%;
+    outline: none;
+    box-shadow: 0 0px 10px rgba(2, 32, 151, 0.5);
+    margin-top: 15px;
+    height: 45px;
+    transition:  ease-in 80ms;
+  }
+  .signup-social:active{
+    transform: scale(0.98);
+  }
+  .signup-social img
+  {
+    background-color: #fefefe;
+    border: solid px;
+    border-radius: 5px;
+    padding: 5px;
+    margin-left: -22px;
+  }
+  .signup-social a {
+    margin-right: 68px;
+    font-weight: 600;
+    color: white;
+  }
+  .signup-social p {
+    margin-top: 10px;
+    margin-right: 68px;
+    font-weight: 600;
+    color: white;
+  }
+
+  .txt-or{
+    margin-top: 10px ;
+    color: #999;
+  }
+  .form-group{
+    margin-top: -5px;
+  }
+  .form-group label
+  {
+    font-size: 18px;
+  }
+  .wrapper-login-footer{
+    display: flex;
+    justify-content:center;
+    margin-top: 20px;
+    font-family: quicksand;
+  }
+  .wrapper-login-footer2 {
+    margin-top: -10px;
+  }
+  .wrapper-login-footer a{
+    margin-left: 5px;
+    color: #ee2d7a;  
+  }
+  #btn-login{
+    width: 100%;
+    padding: 10px ;
+    margin-top: 10px;
+    border-radius: 10px;
+    border: 0;
+    background-color: #e83770;
+    box-shadow: 0 0px 5px  rgba(130, 3, 35, 0.5);
+    color: white;
+    font-weight: 600;
+    transition:  ease-in 80ms;
+    cursor: pointer;
+  }
+  #btn-login:active{
+    transform: scale(0.98);
+  }
+  #btn-signup:active{
+    transform: scale(0.98);
+  }
+.wrapper-btn-login{
+  display: flex;
+  justify-content: center;
+}
+.eye-icon {
+  cursor: pointer;
+  color: #2e56f3;
+  margin-left: 10px;
+}
+.form-group-changepass {
+  position: relative;
+}
+.form-group-changepass label {
+  position: absolute;
+  top: 50%;
+  left: 10px;
+  transform: translateY(-50%);
+  color: #666;
+  pointer-events: none;
+  transition: 0.3s;
+}
+.form-control-changepass {
+  height: 45px;
+  width: 100%;
+}
+.form-control-changepass:focus + label,
+.form-control-changepass:not(:placeholder-shown) + label {
+  top: 8px;
+  font-size: 14px;
+  color: #333;
+  font-weight: bold;
+  font-family: quicksand;
+}
+
+

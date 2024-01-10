@@ -1,0 +1,227 @@
+*{
+   margin: 0;
+   padding: 0;
+    box-sizing: border-box;
+    font-family: open sans;
+}
+.header-webshop a{
+   text-decoration: none;
+}
+.header-label{
+    display: flex;
+    justify-content: center;
+    font-family: "Alatsi";
+    color: white;
+    font-size: 18px;
+    animation-name: doimau;
+    animation-duration: 15s;
+    animation-iteration-count: infinite;
+}
+marquee{
+    padding: 10px;
+    width: 70%;
+    margin: 0 auto;
+  }
+ @keyframes doimau {
+    0%{background-color: #e83770;}
+    25%{background-color: rgb(242,112,156);}
+    50%{background-color: #23a6d5;}
+    75%{background-color:  rgb(255,148,114);}
+    100%{background-color:  #7819ed;};
+}
+.social-icon img{
+ width: 40px;
+ margin: 10px;
+ transition: ease-in 120ms;
+}
+.social-icon img:hover{
+    transform: scale(1.2);
+}
+.btn-search{
+    background-color: white  ;
+    color: black;
+    transition: all 0.2s;
+}
+.btn-search :hover{
+    background-color:#e83770 ;
+}
+
+.wrapper-header a{
+    color: black;
+}
+.header{
+    display: flex;
+    justify-content: space-around;
+    padding: 10px; 
+    margin: 5px;
+    align-items: center;
+}
+
+.header-webshop a{
+    padding: 10px 30px;
+    border: 0;
+    border-radius:5px ;
+    background-color: #ec2765 ;
+    color: white;
+    transition: all 80ms;
+}
+.header-webshop:active{
+    transform: scale(0.97);
+}
+.header-webshop:hover a{
+   background-color:#86c200;
+}
+.form-control{
+    padding: 0 150px;
+}
+.wrapper-barsearch{
+    margin-top: 15px;
+}
+.barsearch{
+    position: relative;
+    display: flex;
+    align-items: center;
+  
+  }
+.barsearch input {
+      padding-right: 30px; /* Để tạo không gian cho biểu tượng tìm kiếm */
+      padding: 10px;
+      width: 100%;
+      font-size: 16px;
+      border-radius: 10px ;
+      border:solid 2px  #23a6d5;
+      outline: 0;
+      min-width: 500px;
+      flex: 1;
+    }
+  .barsearch input:focus {
+    box-shadow: 0 0 10px rgba(35, 166, 213, 0.8);
+    }
+    #btn-search{
+    position: absolute;
+    right: 10px;
+    top: 50%;
+    transform: translateY(-50%);
+    background: none;
+    border: none;
+    }
+  #btn-search i {
+    background-color: white;
+      font-size: 25px;
+      color: coral;
+      cursor: pointer;
+      float: right;
+    }
+.wrapper-header-non{
+    margin-top: -20px;
+}
+.amount-non{
+    position: relative;
+    border-radius: 50%;
+    width: 35px;
+    height: 35px;
+    background-color: orange;
+    margin-left: 20px;
+    margin-top: -20px;
+}
+.amount-non p{
+    position: absolute;
+    color: white;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+.img-non{
+    animation-name: non-shake;
+    animation-duration: 3s;
+    animation-iteration-count: infinite;
+  }
+
+  @keyframes non-shake {
+    0%,75%,100%{
+      transform: rotate(0deg);
+    }
+    25% {
+      transform: rotate(-25deg);
+    }
+    50% {
+      transform: rotate(25deg);
+    }
+  }
+  @keyframes non-shake-stop {
+    0%,100%{
+      transform: rotate(0deg);
+    }
+  }
+  .amount-non img:hover{
+    animation: non-shake-stop;
+  }
+
+  /* sidebar */
+   .nav-item:last-child {
+    margin-bottom: 20px;
+  }
+.nav-link {
+    border-radius: 10px;
+    margin: 3px;
+    padding: 8px;
+    background-color: #012483;
+    transition: all 80ms;
+    color: yellow;
+}
+.nav-item:active{
+    transform: scale(0.98);
+}
+.nav-link:hover{
+    background-color: coral;
+    color:white;
+}
+.nav-item{
+    width: 90%;
+    margin: auto;  
+}
+.header-admin{
+    display: flex;
+    align-items: center;
+    margin-top: 15px;
+    margin-bottom: 10px;
+}
+
+.header-admin img{
+  border-radius: 100%;
+  margin-left: 30px;
+}
+.header-admin p{
+  font-size: 18px;
+  margin: 15px;
+}
+.admin-name{
+   margin-left: 10px;
+   font-size: 18px;
+}
+.sidebar-admin{
+    box-shadow: 0 0 4px rgba(2, 41, 199);
+    border-radius: 15px;
+}
+.wrapper-content{
+    /* box-shadow: 0 0 4px rgb(241, 6, 81); */
+    padding: 10px;
+    margin-left: -15px;
+}
+.wrapper-content h4{
+   color: green;
+}
+
+.footer{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-image: linear-gradient(90deg, #e83770,rgb(255,148,114));
+    margin-top: 10px;
+    padding: 15px;
+}
+.footer p{
+    margin: auto;
+    color: white;
+    font-size: 18px ;
+}

@@ -1,0 +1,257 @@
+.cart-title{
+    font-family: quicksand ;
+     text-align: center;
+ }
+.cart-title p {
+  font-size: 18px;
+ }
+
+ .cart-title strong{
+     font-size: 25px;
+ }
+ .line{
+     width: 5%;
+     border:solid 2px black;
+     margin: 0 auto;
+ }   
+ .row-cart{
+     width: 90%;
+     margin-top: 20px;
+     margin-left: auto;
+     margin-right: auto;
+ }
+ 
+ .table-cart{
+     font-family:quicksand;
+     box-shadow: 0 0 5px rgb(242, 78, 143) ;
+     
+ }
+ .table-cart-img {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+ .table-cart-item{
+    line-height: 15px;
+    width: 100%;
+ }
+ .table-cart-item a{
+   float: right;
+   margin-top: -5px;
+ }
+ .table-cart-item p:last-child{
+    letter-spacing: 1px;
+
+ }
+
+ .table-cart tr td p:first-child ,
+ .line-total,
+ .total-header{
+     font-size: 18px;
+     font-weight: bold;
+     color: black;
+ }
+ .table-cart-amount {
+   width: 14%;
+   display: flex;
+   justify-content: space-between;
+ }
+ .table-cart-amount a {
+    font-size: 13px;
+    border: 0;
+    color: brown;
+    background-color: white;
+    margin-top: 5px;
+}
+ .table-cart-amount input{
+     padding: 2px ;
+     width: 50px;
+     text-align: center;
+     outline: 0;
+     border: 1px solid rgb(242,112,156);
+ }
+ .line-total{
+     text-align: right;
+     margin-top: -28px;
+ }
+ .wrapper-total{
+     font-family: quicksand;
+     padding: 20px;
+     box-shadow: 0 0 7px rgba(2, 45, 214, 0.5);
+     position: sticky;
+     top: 10px;
+ }
+ 
+ .total-title{
+     font-size: 22px;
+     font-weight: bold;
+     color: black;
+     border-bottom: solid 1px rgb(187, 186, 186);
+ }
+
+.form-group-profile{
+    margin-top: 10px;
+}
+.form-group-profile label{
+   font-weight: bold;
+}
+ .total-main{
+     display: flex;
+     justify-content: space-between;
+     align-items: center;
+     margin-top: -20px;
+     width: 95%;
+     margin-left: auto;
+     margin-right: auto;
+ }
+ .total-main p{
+   margin: 0;
+ }
+ .total-main p:first-child{
+    color: #5C5C5C;
+    font-size: 18px;
+    font-weight: bold;  
+ }
+ .total-main p:last-child{
+    color: red;
+    font-size: 25px;
+    font-weight: bold;
+    letter-spacing: 1px;
+ }
+ .total-pay{
+    padding: 10px;
+    text-align: center;
+    margin-top: 20px;
+ }
+  #btn-pay{
+    padding: 10px 120px;
+    background-color:  #ee2d7a ;
+    color: white;
+    font-size: 18px;
+    border-radius: 5px;
+    transition: all 80ms;
+    text-align: center;
+ }
+ #btn-pay:hover{
+    background-color:  #f20362 ;
+ }
+ #btn-pay:active{
+   transform: scale(0.97);
+ }
+ .total-back{
+  margin-top: 15px;
+  text-align: center;
+ }
+ .total-back a {
+     color: orangered; 
+     font-size: 18px;
+ }
+ .total-back a:hover {
+     color: green; 
+ }
+ /* Thanh bar thanh toán */
+ /* jQuery Demo */
+
+
+/* Responsive Arrow Progress Bar */
+.arrow-steps{
+    display: flex;
+   justify-content: center;
+   font-family: quicksand;
+}
+.arrow-steps .step {
+    font-size: 16px;
+    text-align: center;
+    color: #777;
+    cursor: default;
+    margin: 0 1px 0 0;
+    padding: 10px 0px 10px 0px;
+    width: 30%;
+    position: relative;
+    background-color: #ddd;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+}
+
+.arrow-steps .step a {
+    color: #777;
+    text-decoration: none;
+}
+
+.arrow-steps .step:after,
+.arrow-steps .step:before {
+    content: "";
+    position: absolute;
+    top: 0;
+    right: -17px;
+    width: 0;
+    height: 0;
+    border-top: 19px solid transparent;
+    border-bottom: 17px solid transparent;
+    border-left: 17px solid #ddd;
+    z-index: 2;
+}
+
+.arrow-steps .step:before {
+    right: auto;
+    left: 0;
+    border-left: 17px solid #fff;
+    z-index: 0;
+}
+
+.arrow-steps .step:first-child:before {
+    border: none;
+}
+.arrow-steps .step:first-child {
+    border-top-left-radius: 4px;
+    border-bottom-left-radius: 4px;
+}
+
+.arrow-steps .step:last-child {
+    border-top-right-radius: 4px;
+    border-bottom-right-radius: 4px;
+}
+
+.arrow-steps .step span {
+    position: relative;
+}
+
+*.arrow-steps .step.done span:before {
+    opacity: 1;
+    content: "";
+    position: absolute;
+    top: -2px;
+    left: -10px;
+    font-size: 11px;
+    line-height: 21px;
+}
+
+.arrow-steps .step.current {
+    color: #fff;
+    background-color: #86c200;
+}
+
+.arrow-steps .step.current a {
+    color: #fff;
+    text-decoration: none;
+}
+
+.arrow-steps .step.current:after {
+    border-left: 17px solid #5599e5;
+}
+
+.arrow-steps .step.done {
+    color: white;
+    background-color: #86c200;
+}
+
+.arrow-steps .step.done a {
+    color: #173352;
+    text-decoration: none;
+}
+
+.arrow-steps .step.done:after {
+    border-left: 17px solid#86c200;
+}

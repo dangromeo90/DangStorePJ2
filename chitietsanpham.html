@@ -1,0 +1,323 @@
+<!DOCTYPE html>
+<html lang="en-vi">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css"/>
+    <link rel='stylesheet prefetch' href='https://netdna.bootstrapcdn.com/font-awesome/3.2.1/css/font-awesome.css'>
+    <link href="https://fonts.googleapis.com/css?family=Alatsi&display=swap"rel="stylesheet"/>
+    <link href="https://fonts.googleapis.com/css?family=Quicksand&display=swap"rel="stylesheet" />
+    <link href="https://fonts.googleapis.com/css?family=Open+Sans&display=swap"rel="stylesheet"/>
+    <style>.container-fluid a{text-decoration: none;} .container ul{list-style:none;}</style>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/animation.css">
+    <link rel="stylesheet" href="css/modal.css">
+    <link rel="stylesheet" href="css/profile.css">
+    <link rel="stylesheet" href="css/productdetail.css">
+    <link rel="stylesheet" href="css/dropdown.css">
+    <link rel="stylesheet" href="css/reponsive.css">
+    <link rel="stylesheet" href="css/cart.css">
+    <script src="https://cdn.jsdelivr.net/npm/jquery@3.6.4/dist/jquery.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11.10.2/dist/sweetalert2.all.min.js"></script>
+<link href="https://cdn.jsdelivr.net/npm/sweetalert2@11.10.2/dist/sweetalert2.min.css" rel="stylesheet">
+</head>
+<body >
+    <div class="container-fluid">
+        <div class="header-label">
+           <marquee> Thế giới mỹ phẩm và thực phẩm chức năng</marquee>
+        </div>
+        <!-- hearder start -->
+        <header class="header">
+            <div class="logo">
+                <a href="index.html"><img src="img/logo/danglogo.jpg" alt="" width="250px" height="160px"></a>
+            </div>
+            <div class="wrapper-barsearch">
+                <div class="barsearch">
+                    <input type="text">
+                    <button type="button" id="btn-search"><i class="fas fa-search"></i></button>         
+                </div>
+                <div class="header-info">
+                    <ul>
+                        <li>Miễn phí giao hàng cho hoá đơn từ 500.000đ <img src="./img/icon/freeship.png" width="40px"> </li>
+                        <li>Hoả tốc 2 giờ trong nội thành Tp.HCM <img src="./img/icon/HoaToc.png" width="40"></li>
+                        <li>Tư vấn - đặt hàng : <a href="https://id.zalo.me/account?continue=https://chat.zalo.me">0915111916</a> - 
+                            <a href="https://id.zalo.me/account?continue=https://chat.zalo.me">0837863333</a></a></li>
+                    </ul>
+                    </p>
+                </div>
+            </div>
+            <div class="wrapper-header-controller">
+                <div class="wrapper-header-cart-top">
+                    <div class="header-cart">
+                        <div class="cart">
+                            <a href=""><img class="img-bag-icon" src="./img/icon/bag-64-1.png" width="35px"></a>
+                        </div>
+                        <div class="wrapper-cart-amount">
+                            <div class="cart-amount">
+                                    <p>5</p>
+                            </div>
+                            <a class="txt-cart">Giỏ hàng</a>
+                         </div>
+                    </div>
+                    <div class="account">
+                        <button class="dropbtn">Tài khoản</button>
+                        <form action="">
+                            <div class="dropdown-content">
+                                <button type="button"  data-toggle="modal" data-target="#modal-login">Đăng nhập</button>
+                                <button type="button"  data-toggle="modal" data-target="#modal-signup">Đăng Ký</button>
+                            </div>
+                      </form>
+                   </div>
+               </div>
+                    <div class="social-icon">
+                        <a href="https://www.tiktok.com/"target="_blank"><img src="./img/icon/tiktok.png"/></a>
+                        <a href="https://www.facebook.com/"target="_blank"><img src="./img/icon/fb.png"/></a>
+                        <a href="https://id.zalo.me/" target="_blank"><img src="./img/icon/zalo.png"/></a>
+                        <a href="https://shopee.vn/" target="_blank"><img src="./img/icon/shoppe.png"/></a>
+                        <a href="https://www.lazada.vn/"target="_blank"><img src="./img/icon/lazada-1.png"/></a>
+                    </div>
+          </div>
+     </header>
+     <div class="menu">
+        <ul class="menu-bar">
+            <li>
+                <a href="#" class="home"><i class="fas fa-home"></i>Trang chủ</a></li>
+            <li class="dropdown">
+                <a href="#"><i class="fas fa-bars"></i>Danh mục</a>
+                <ul class="dropdown-content1">
+                    <li><a href="#">Thực phẩm chức năng</a></li>
+                    <li><a href="#">Kem dưỡng ẩm</a></li>
+                    <li><a href="#">Serum</a></li>
+                </ul>
+            </li>
+            <li><a href="#">Kinh nghiệm</a></li>
+            <li><a href="#">Khuyến mãi</a></li>
+            <li><a href="#">Liên hệ</a></li>
+           
+        </ul>
+    </div>
+     <main>
+        <div class="container-fluid">
+            <div class="row wrapper-product-detail">
+              <div class="col-sm-5 left-detail">
+                   <div class="left-detail-image">
+                        <img src="img/products/vitaminC.jpg" alt="" width="420px">
+                   </div>
+                   <div class="left-detail-thumbnail">
+                       <a href=""><img src="img/products/vitaminC.jpg" alt=""></a>
+                       <a href=""><img src="img/products/vitaminC2.jpg" alt=""></a>
+                       <a href=""><img src="img/products/vitaminC3.jpg" alt=""></a>
+                       <a href=""><img src="img/products/vitaminC4.jpg" alt=""></a>
+                       <a href=""><img src="img/products/vitaminC5.jpg" alt=""></a>
+                   </div>
+              </div>
+              <div class="col-sm-7 right-detail">
+                 <div class="wrapper-right-detail">
+                     <p >Thương hiệu: <span class="product-brand">BALANCE</span> </p>
+                     <p class="product-name">Serum Balance Active Vitamin C Brightening 30ml</p>
+                     <div class="wrapper-price">
+                        <p class="product-saleprice">145.000đ</p> 
+                        <p class="product-price">270.000đ</p>
+                     </div>
+                     <form action="">
+                        <div class="wrapper-amount">
+                            <button><i class="fas fa-minus"></i></button>
+                            <input type="number" value="1">
+                            <button><i class="fas fa-plus"></i></button>
+                        </div>
+                        <input type="submit" name="addToCart" id="addtoCart" value="Thêm vào giỏ">
+                     </form>
+                        <div class="product-info">
+                            <p class="txt-info">Mô tả</p>
+                            <p> - Giúp da sáng và đều màu hơn. <br>
+                                - Giảm sự xuất hiện của các đốm thâm, đốm đồi mồi.<br>
+                                - Chống oxy hóa mạnh mẽ, giúp bảo vệ da dưới các tác động của môi trường nhằm ngăn ngừa lão hóa.<br>
+                                - Đạt giải Best Affordable Facial Serum của Attracta Beauty Awards năm 2020.<br>
+                                - Serum có màu vàng đục. Thẩm thấu nhanh, không gây nhờn hay bết dính.<br>
+                            </p>
+                            <p class="txt-info">Thông tin sản phẩm</p>
+                            <p>
+                                - Serum sáng da, mờ thâm Balance Active Skincare Vitamin C Brightening.
+                                - Thương hiệu: Balance Active Formula (UK - Anh Quốc).
+                                - Dung tích: 30ml.
+                                - Dùng cho: mọi loại da.
+                                - HSD: 3 năm kể từ ngày sản xuất, 12 tháng kể từ ngày mở nắp.
+                                - Hàng chính hãng phân phối tại Việt Nam.
+                            </p>
+                            <p class="txt-info">Thành phần và công dụng</p>
+                            <p>
+                                - Hai Vitamin C ổn định (Illumiscin 6% và Stay-C®50 3%) giúp giảm sự xuất hiện của các đốm thâm, đốm đồi mồi, cho làn da sáng và đều màu hơn.
+                                - Ngoài ra còn có Aqua, Glycerin, Sodium Ascorbyl Phosphate, Phenoxyethanol, Carrageenan, Polysorbate 20, Ascorbyl Glucoside, Olea Europaea (Olive) Leaf Extract, Zinc PCA, Disodium EDTA, Tocopheryl Acetate, Parfum, Ethylhexylglycerin, Ascorbic Acid, Linalool, Limonene.
+                            </p>
+                            <p class="txt-info">Hướng dẫn sử dụng</p>
+                            <p>
+                                - Rửa sạch và lau khô da.
+                                - Lấy 1 lượng nhỏ serum (cỡ 2 - 4 giọt) thoa đều lên mặt và cổ (vừa thoa vừa massage da).
+                                - Sau đó thêm các loại serum, dầu dưỡng & kem dưỡng khác theo qui trình dưỡng da của bạn.
+                                - Sử dụng ngày 2 lần vào buổi sáng và buổi tối.
+                            </p>
+                     </div>
+                 </div>
+             </div>
+          </div>
+        </div>
+        <div class="row"> 
+            <div class="col-sm-12">
+                <div class="wrapper-rating">
+                    <div class="title-comment">
+                        <h4>Đánh giá và nhận xét</h4>
+                    </div>
+                    <div class="rating">
+                        <button onclick="showReviewForm()">Viết đánh giá</button>
+                        <button>Đặt câu hỏi</button>
+                    </div>
+                    <div class="wrapper-comment" id="reviewForm" class="hidden"> 
+                        <form>
+                            <label for="rating">Đánh giá:</label>
+                            <input type="number" id="rating" name="rating" min="1" max="5" required><br>
+                            <label for="comment">Nhận xét:</label>
+                            <textarea id="comment" name="comment" rows="4" required></textarea><br>
+                            <button type="submit">Gửi đánh giá</button>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </div>
+       
+     </main>
+       <!-- main end -->
+       <footer> 
+            <div class="footer-top">
+                <div class="footer_1">
+                    <h5>Về chúng tôi</h5>
+                    <a href="">Giới thiệu</a>
+                    <a href="">Chính sách đổi hàng</a>
+                    <a href="">Chính sách giao hàng</a>
+                    <a href="">Liên hệ</a>
+                </div>
+                 <div class="footer_2">
+                    <h5>Đăng ký nhận tin</h5>
+                    <p class="footer_2_txt">(Nhận thông tin về sản phẩm và <br> khuyễn mãi hàng tuần)</p>
+                    <input class="write_email" type="text" placeholder="Email"><br>
+                    <button class="btn_dangky"><a href="">Đăng Ký</a></button>
+                </div>
+                <div class="footer_3">
+                    <h5>Hỗ trợ thanh toán</h5>
+                    <div class="footer_3_icon">
+                      <a href=""><img  src="img/icon/shoppepay.png"> </a>
+                      <a href=""><img  src="img/icon/momo.png"/>  </a> 
+                      <a href=""><img  src="img/icon/vnpay.png"/> </a> 
+                      <a href=""><img  src="img/icon/visa.png" />  </a> 
+                    </div>
+                    <div class="icon-bothongtin">
+                        <img src="./img/icon/dadangky-01.png" alt="">
+                        <img src="./img/icon/dathongbao-01.png" alt="">
+                    </div>
+                </div>
+                <iframe src="https://www.google.com/maps/embed?pb=!1m17!1m12!1m3!1d3919.4686199310772!2d106.66131507486894!3d10.775375259213488!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m2!1m1!2zMTDCsDQ2JzMxLjMiTiAxMDbCsDM5JzUwLjAiRQ!5e0!3m2!1svi!2s!4v1698748608476!5m2!1svi!2s" width="300"style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>            </div>
+
+              
+            <div class="footer_bottom">©DTH store All rights reserved</div>
+       </footer>
+       
+        <div class="wrapper-call-btn">
+            <div class="call-btn-2">
+                <div class="call-btn-circle-1"></div>
+                <div class="call-btn-circle-2"></div>
+                <a href="https://id.zalo.me/account?continue=https://chat.zalo.me"><img src="./img/icon/zalo.png" alt="" width="50px"></a>\
+            </div>
+        </div>
+        <div class="wrapper-call-btn-2">
+            <div class="call-btn">
+                <div class="call-btn-circle-3"></div>
+                <div class="call-btn-circle-4"></div>
+                <a href="https://www.messenger.com/"><img src="./img/icon/facebook.png" alt="" width="50px"></a>\
+            </div>
+        </div>
+   </div>
+
+<!-- Đăng nhập -->
+<div class="modal fade" id="modal-login">
+    <div class="modal-dialog">
+        <div class="modal-content loginform">
+            <button type="button" class="close" data-dismiss="modal" ><img src="img/icon/close2.jpg" width="30px"></button>
+            <div class="modal-header1">
+                <h4 class="modal-title">Đăng Nhập</h4>
+              <button class="signup-social">
+                <img src="img/icon/google.png" alt="" width="40px">
+                <p>Login with google </p>
+              </button>
+              <div class="txt-or"><span>Or</span></div>
+              <form action="" method="post" enctype="multipart/form-data" class="form-sinup">
+                <div class="form-group">
+                    <label for="email">Email</label>
+                    <input type="email" value="@gmail.com" class="form-control" placeholder="Nhập email đăng nhập" id="email" name="email" onblur="addDefaultDomain()" required>
+                  </div>
+                <div class="form-group">
+                    <label for="pwd">Mật khẩu</label>
+                    <div class="input-group">
+                        <input type="password" class="form-control" placeholder="Nhập mật khẩu" id="password" name="password" required>
+                        <i class="fas fa-eye eye-icon"  onclick="showpassword()"></i>
+                    </div>
+                </div>
+                <div class="wrapper-btn-login">
+                    <input type="submit" name="login" id="btn-login" value="Đăng nhập">
+                    <input type="reset" id="btn-reset" value="Huỷ">
+               </div>
+              </form>
+            </div>
+        </div>
+    </div>
+</div>
+<!-- Modal Đăng Ký -->
+<div class="modal fade" id="modal-signup">
+    <div class="modal-dialog">
+        <div class="modal-content registerform">
+            <button type="button" class="close" data-dismiss="modal" ><img src="img/icon/close2.jpg" width="30px"></button>
+            <div class="modal-header1">
+                <h4 class="modal-title">Đăng Ký</h4>
+              <button class="signup-social">
+                <img src="img/icon/google.png" alt="" width="40px">
+                <p>Sign up with google </p>
+              </button>
+              <div class="txt-or"><span>Or use your email for registration</span></div>
+              <form action="" method="post" enctype="multipart/form-data" class="form-sinup">
+                <div class="form-group">
+                  <label>Họ tên</label>
+                  <input type="text" class="form-control" placeholder="Nhập tên đăng nhập" id="username" name="username" required>
+                </div>
+                <div class="form-group">
+                    <label for="email">Email</label>
+                    <input type="email" class="form-control" placeholder="Nhập email " id="email" name="email" required>
+                  </div>
+                <div class="form-group">
+                  <label >Mật khẩu</label>
+                  <input type="password" class="form-control" placeholder="Nhập mật khẩu" id="password" name="password"required>
+                </div>
+                <div class="form-group">
+                    <label >Nhập lại mật khẩu</label>
+                    <input type="repassword" class="form-control" placeholder="Nhập lại mật khẩu" id="repassword" name="repassword"required>
+                </div>
+            
+                <div class="wrapper-btn-login">
+                    <input type="submit" name="login" id="btn-login" value="Đăng ký">
+                    <input type="reset" id="btn-reset" value="Huỷ">
+               </div>
+              </form>
+            </div>
+        </div>
+    </div>
+</div>
+<script src="js/slide.js"></script>
+<script src="js/checkform.js"></script>
+
+</body>
+</html><style>
+    .hidden {
+        display: none;
+    }
+</style>
